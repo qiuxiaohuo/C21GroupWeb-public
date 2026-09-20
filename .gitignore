@@ -1,0 +1,8 @@
+site/
+.DS_Store
+.svn/
+.stfolder
+.stignore
+__pycache__/
+*.pyc
+

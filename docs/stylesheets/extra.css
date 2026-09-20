@@ -1,0 +1,122 @@
+/* ==============================
+   全局颜色变量
+   ============================== */
+
+:root {
+  /* 北大红 */
+  --pku-red: #94070a;
+  /* 银杏叶黄，用于暗色主题的强调色 */
+  --dark-yellow: #E4AB4D;
+}
+
+
+/* ==============================
+   亮色主题
+   ============================== */
+
+[data-md-color-scheme="default"] {
+  /* 网站主色使用北大红 */
+  --md-primary-fg-color: #94070a;
+  --md-primary-fg-color--light: #ff6b75;
+  --md-primary-fg-color--dark: #94070a;
+
+  /* 链接与交互强调色 */
+  --md-typeset-a-color: #94070a;
+  --md-accent-fg-color: #94070a;
+  --md-accent-fg-color--light: #ff6b75;
+  --md-accent-fg-color--dark: #94070a;
+  --md-accent-fg-color--transparent: rgba(148, 7, 10, 0.15);
+}
+
+
+/* ==============================
+   暗色主题
+   ============================== */
+
+[data-md-color-scheme="slate"] {
+  /* 网站主色仍使用北大红 */
+  --md-primary-fg-color: #94070a;
+  --md-primary-fg-color--light: #ff6b75;
+  --md-primary-fg-color--dark: #94070a;
+
+  /* 正文链接颜色 */
+  --md-typeset-a-color: #E4AB4D;
+
+  /* 悬停、选中、聚焦等交互颜色 */
+  --md-typeset-a-color: #E4AB4D;
+  --md-accent-fg-color: #E4AB4D;
+  --md-accent-fg-color--light: #ffc76e;
+  --md-accent-fg-color--dark: #ae761c;
+  --md-accent-fg-color--transparent: rgba(219, 173, 93, 0.15);
+}
+
+
+/* ==============================
+   加粗文字
+   ============================== */
+
+/* 亮色主题：北大红 */
+[data-md-color-scheme="default"] .md-typeset p strong,
+[data-md-color-scheme="default"] .md-typeset p b,
+[data-md-color-scheme="default"] .md-typeset li strong,
+[data-md-color-scheme="default"] .md-typeset li b,
+[data-md-color-scheme="default"] .md-typeset td strong,
+[data-md-color-scheme="default"] .md-typeset td b {
+  color: var(--pku-red);
+}
+
+/* 暗色主题：银杏叶黄 */
+[data-md-color-scheme="slate"] .md-typeset p strong,
+[data-md-color-scheme="slate"] .md-typeset p b,
+[data-md-color-scheme="slate"] .md-typeset li strong,
+[data-md-color-scheme="slate"] .md-typeset li b,
+[data-md-color-scheme="slate"] .md-typeset td strong,
+[data-md-color-scheme="slate"] .md-typeset td b {
+  color: var(--dark-yellow);
+}
+
+
+/* ==============================
+   超链接
+   ============================== */
+
+/* 普通链接使用当前主题的链接颜色 */
+.md-typeset a:not(.md-button) {
+  color: var(--md-typeset-a-color);
+  text-decoration: underline;
+}
+
+/* 链接中的加粗文字保持链接颜色 */
+.md-typeset a strong,
+.md-typeset a b {
+  color: inherit;
+}
+
+
+/* ==============================
+   标题
+   ============================== */
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+}
+
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-weight: 700;
+}
+
+
+/* ==============================
+   下载按钮
+   ============================== */
+
+.md-typeset .md-button.download-button {
+  padding: 0.392em 1em;
+  font-size: 0.618rem;
+  border-radius: 0.3rem;
+}

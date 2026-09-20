@@ -233,4 +233,4 @@ $$
 
 ### 2026/07/24
 
-1. 邱俊淞创建了文档 `Hashin--Shtrikman 变分原理的构造方法.md`
+1. 创建了文档 `Hashin--Shtrikman 变分原理的构造方法.md`

@@ -71,6 +71,6 @@ $$
 
 ### 2026/07/24
 
-1. 邱俊淞创建了文档 `Eshelby 猜想.md`
+1. 创建了文档 `Eshelby 猜想.md`
 
 [^1]: Liu, L.P., 2008. Solutions to the Eshelby conjectures. Proc. R. Soc. A. 464, 573–594. https://doi.org/10.1098/rspa.2007.0219

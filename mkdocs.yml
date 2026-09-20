@@ -1,6 +1,6 @@
-site_name: Mechanics 知识文档
-site_author: 袁子峰课题组
-site_description: 计算固体力学理论与技术文档
+site_name: 计算均质化方法
+site_author: 邱小伙
+site_description: 计算固体力学中均质化方法的理论
 
 theme:
   name: material
@@ -16,14 +16,10 @@ theme:
     - header.autohide
   palette:
     - scheme: default
-      primary: custom
-      accent: custom
       toggle:
         icon: material/brightness-7
         name: 切换到深色模式
     - scheme: slate
-      primary: custom
-      accent: custom
       toggle:
         icon: material/brightness-4
         name: 切换到浅色模式
@@ -34,9 +30,6 @@ plugins:
         - zh
         - en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-
-extra_css:
-  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -60,35 +53,17 @@ nav:
   - 首页: index.md
   - 计算均质化及降阶方法:
       - 简介: _roh/index.md
-      - 降阶均质化（ROH）的影响张量:
-          - 多尺度问题描述: _roh/chap1_基础/intro.md
-          - ROH 的理论基础:
-              - 引言: _roh/chap1_基础/sec1_theory/intro.md
-              - 渐进均质化: _roh/chap1_基础/sec1_theory/asymptotic.md
-              - 均匀场变换分析: _roh/chap1_基础/sec1_theory/tfa.md
-          - 影响张量的计算与应用:
-              - 引言: _roh/chap1_基础/sec2_compt_fwork/intro.md
-              - 线下求解影响张量: _roh/chap1_基础/sec2_compt_fwork/offline.md
-              - 线上组装降阶方程: _roh/chap1_基础/sec2_compt_fwork/online.md
-          - ROH 与其它降阶方法的关联:
-              - 引言: _roh/chap1_基础/sec3_rom_diff/intro.md
-              - 细观力学: _roh/chap1_基础/sec3_rom_diff/mmech.md
-              - 非均匀场变换分析: _roh/chap1_基础/sec3_rom_diff/ntfa.md
-              - 快速傅立叶变换: _roh/chap1_基础/sec3_rom_diff/fft.md
-              - 聚类分析: _roh/chap1_基础/sec3_rom_diff/ca.md
-          - 小结: _roh/chap1_基础/coda.md
-      - 影响张量的修正框架:
-          - 修正影响张量的动机: _roh/chap2_修正/intro.md
-          - 非协调影响函数的限制:
-              - 引言: _roh/chap2_修正/sec1_incomp_infl_func_theory/intro.md
-              - 宏细观能量一致性: _roh/chap2_修正/sec1_incomp_infl_func_theory/macro_micro_consistency.md
-              - 宏观热力学一致性: _roh/chap2_修正/sec1_incomp_infl_func_theory/macro_thermo_consistency.md
-              - 宏观材料对称性: _roh/chap2_修正/sec1_incomp_infl_func_theory/macro_material_symmetric.md
-          - 非协调影响函数的构造: _roh/chap2_修正/sec2_incomp_infl_func_construct.md
-          - 数值验证: _roh/chap2_修正/sec3_numerical_verification.md
-      - 修正后影响张量的应用:
-          - 芯片封装: _roh/chap3_应用/chip.md
-          - 各向异性损伤: _roh/chap3_应用/damage_ortho.md
+      - 多尺度问题描述: _roh/chap1_基础/intro.md
+      - 渐进均质化: _roh/chap1_基础/sec1_theory/asymptotic.md
+      - 降阶方法:
+          - 均匀场变换分析: _roh/chap1_基础/sec1_theory/tfa.md
+          - 细观力学: _roh/chap1_基础/sec3_rom_diff/mmech.md
+          - 非均匀场变换分析: _roh/chap1_基础/sec3_rom_diff/ntfa.md
+          - 快速傅立叶变换: _roh/chap1_基础/sec3_rom_diff/fft.md
+          - 聚类分析: _roh/chap1_基础/sec3_rom_diff/ca.md
+      - 影响张量的计算与应用:
+        - 线下求解影响张量: _roh/chap1_基础/sec2_compt_fwork/offline.md
+        - 线上组装降阶方程: _roh/chap1_基础/sec2_compt_fwork/online.md
   - 细观力学:
       - 简介: _mmech/index.md
       - 弹性材料的对称性:
@@ -115,21 +90,20 @@ nav:
           - 圆球异质: _mmech/特殊几何域的解析解/圆球异质.md
           - 复合胞元: _mmech/特殊几何域的解析解/复合胞元.md
           - 层合板: _mmech/特殊几何域的解析解/层合板.md
-  - 本构理论和模型:
+  - 单胞几何建模和网格生成:
+      - 简介: _ucgmsh/index.md
+  - 计算非弹性:
       - 简介: _inelas/index.md
       - 连续介质力学中的热力学定律: _inelas/连续介质力学中的热力学定律.md
       - 广义标准材料框架: _inelas/广义标准材料模型.md
       - Lemaitre 塑性-损伤耦合模型: _inelas/塑性-损伤耦合的本构模型.md
       - Gurson 塑性模型: _inelas/Gurson-模型.md
       - Christensen 各向同性材料失效准则: _inelas/各向同性材料失效准则.md
-      - 非均匀场变换分析: _inelas/非均匀场变换分析.md
 
 draft_docs: |
   _roh/附录
-  _roh/_index.md
   _roh/chap0_介绍/intro.md
   _roh/chap2_修正/sec1_incomp_infl_func_theory/弹塑性离散变分原理.md
   _mmech/其它
   _mmech/材料和几何的对称性/3-正交各向异性.md
-  _inelas/Gateaux-导数与-Frechet-导数.md
-
+  _math/Gateaux-导数与-Frechet-导数.md

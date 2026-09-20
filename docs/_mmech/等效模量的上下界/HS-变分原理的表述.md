@@ -299,4 +299,4 @@ $$
 
 ### 2026/07/24
 
-1. 邱俊淞创建了文档 `Hashin--Shtrikman 变分原理的表述.md`
+1. 创建了文档 `Hashin--Shtrikman 变分原理的表述.md`

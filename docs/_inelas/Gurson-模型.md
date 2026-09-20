@@ -258,7 +258,7 @@ $$
 
 ### 2026/07/24
 
-1. 邱俊淞创建了文档 `Gurson 塑性模型.md`
+1. 创建了文档 `Gurson 塑性模型.md`
 
 [^1]: McClintock, F.A., 1968. A Criterion for Ductile Fracture by the Growth of Holes. Journal of Applied Mechanics 35, 363–371. https://doi.org/10.1115/1.3601204
 [^2]: Li, S., Wang, G., 2018. Introduction to Micromechanics and Nanomechanics, 2nd ed. WORLD SCIENTIFIC. https://doi.org/10.1142/8644
